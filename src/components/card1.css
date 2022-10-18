@@ -1,0 +1,201 @@
+:root {
+    --color_1: rgb(245, 240, 227);
+    --color_2: rgb(64, 191, 193);
+    --color_3: rgb(255, 111, 94);
+    --color_4: rgb(240, 19, 77);
+    --color_5: rgb(0, 12, 12);
+    --color_white: #ffffff;
+    /*Dark palette*/
+    --color_dark1: #0D1B2A;
+    --color_dark2: #270082;
+    --color_dark3: #7A0BC0;
+    --color_dark4: #FA58B6;
+    --color_dark5: #E0E1DD;
+}
+
+
+@keyframes appear {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 95%;
+    height: 95%;
+    background-color: var(--color_3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px black;
+    gap: 20px;
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    transition: ease-in-out;
+}
+
+.card1.dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 95%;
+    height: 95%;
+    background-color: var(--color_dark2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px var(--color_white);
+    gap: 20px;
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    border: 1px solid var(--color_white);
+    transition: ease-in-out;
+}
+
+.card1 a {
+    width: 45%;
+    height: 25px;
+    background-color: var(--color_white);
+    box-shadow: 0px 0px 1px 1.5px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color_dark1);
+    border-radius: 15px;
+}
+
+.card1-h2 {
+    font-size: 13px;
+    text-align: center;
+    color: var(--color_dark1);
+}
+
+.card1-h2.dark {
+    font-size: 13px;
+    text-align: center;
+    color: var(--color_white);
+}
+
+.card1 .bx.bxl-linkedin-square.this{
+    color: var(--color_dark1);
+}
+
+.card1.dark .bx.bxl-linkedin-square.this{
+    color: var(--color_white);
+}
+
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+
+    .card1 a {
+        width: 30%;
+        height: 22px;
+        background-color: var(--color_white);
+        box-shadow: 0px 0px 1px 1.5px;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color_dark1);
+        border-radius: 15px;
+    }
+
+    .card1-h2 {  
+        font-size: 13px;
+        text-align: center;
+        color: var(--color_dark1);
+    }
+    
+    .card1-h2.dark {
+        font-size: 13px;
+        text-align: center;
+        color: var(--color_white);
+    }
+
+    .card1 .bx.bxl-linkedin-square.this{
+        color: var(--color_dark1);
+        font-size: 40px;
+    }
+    
+    .card1.dark .bx.bxl-linkedin-square.this{
+        color: var(--color_white);
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+
+    .card1 .bx {
+        font-size: 100px;
+    }
+
+    .card1 a {
+        width: 25%;
+        height: 30px;
+        background-color: var(--color_white);
+        box-shadow: 0px 0px 1px 1.5px;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color_dark1);
+        border-radius: 15px;
+    }
+
+    .card1-h2 {
+        font-size: 20px;
+        text-align: center;
+        color: var(--color_dark1);
+    }
+
+    .card1-h2.dark {
+        font-size: 20px;
+        text-align: center;
+        color: var(--color_white);
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+
+    .card1 .bx {
+        font-size: 120px;
+    }
+
+    .card1 a {
+        width: 30%;
+        height: 27px;
+        background-color: var(--color_white);
+        box-shadow: 0px 0px 1px 1.5px;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color_dark1);
+        border-radius: 15px;
+    }
+
+    .card1-h2 {
+        font-size: 22px;
+        text-align: center;
+        color: var(--color_dark1);
+    }
+
+    .card1-h2.dark {
+        font-size: 22px;
+        text-align: center;
+        color: var(--color_white);
+    }
+}

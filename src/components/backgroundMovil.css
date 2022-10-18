@@ -1,0 +1,1679 @@
+:root {
+    --color_1: rgb(245, 240, 227);
+    --color_2: rgb(64, 191, 193);
+    --color_3: rgb(255, 111, 94);
+    --color_4: rgb(240, 19, 77);
+    --color_5: rgb(0, 12, 12);
+    --color_white: #ffffff;
+    /*Dark palette*/
+    --color_dark1: #0D1B2A;
+    --color_dark2: #270082;
+    --color_dark3: #7A0BC0;
+    --color_dark4: #FA58B6;
+    --color_dark5: #E0E1DD;
+}
+
+@keyframes turn_1 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes turn_2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes turn_3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move1 {
+    0% {
+        left: 5%;
+        bottom: 0%;
+    }
+
+    100% {
+        left: 5%;
+        bottom: 120%;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        left: 20%;
+        bottom: 0%;
+    }
+
+    100% {
+        left: 20%;
+        bottom: 120%;
+    }
+}
+
+@keyframes move3 {
+    0% {
+        left: 30%;
+        bottom: 0%;
+    }
+
+    100% {
+        left: 30%;
+        bottom: 120%;
+    }
+}
+
+@keyframes move4 {
+    0% {
+        left: 40%;
+        bottom: 0%;
+    }
+
+    100% {
+        left: 40%;
+        bottom: 120%;
+    }
+}
+
+@keyframes move5 {
+    0% {
+        left: 50%;
+        bottom: 0%;
+    }
+
+    100% {
+        left: 50%;
+        bottom: 120%;
+    }
+}
+
+@keyframes move6 {
+    0% {
+        left: 60%;
+        bottom: 0%;
+    }
+
+    100% {
+        left: 60%;
+        bottom: 120%;
+    }
+}
+
+@keyframes move7 {
+    0% {
+        left: 70%;
+        bottom: 0%;
+    }
+
+    100% {
+        left: 70%;
+        bottom: 120%;
+    }
+}
+
+@keyframes move8 {
+    0% {
+        left: 85%;
+        bottom: 0%;
+    }
+
+    100% {
+        left: 85%;
+        bottom: 120%;
+    }
+}
+
+.back-ground-movil {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+}
+
+.back-ground-movil.dark {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 300px) {
+
+
+    .back-ground-movil {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        top: 0%;
+        transform: scale(0.8);
+    }
+    
+    .back-ground-movil.dark {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        top: 0%;
+        transform: scale(0.8);
+    }
+
+    .back-div-container-1 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        left: 10%;
+        bottom: 50%;
+        transform: scale(0.3);
+    }
+
+    .back-div-container-2 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move2;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-delay: 5s;
+        position: absolute;
+        left: 15%;
+        bottom: 5%;        
+        transform: scale(0.3);
+    }
+
+    .back-div-container-3 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move3;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 10s;
+        position: absolute;
+        left: 20%;
+        bottom: 10%;
+        transform: scale(0.3);    
+    }
+
+    .back-div-container-4 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move4;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        transform: scale(0.3);
+    }
+
+    .back-div-container-5 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move5;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 8s;
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        transform: scale(0.3);
+    }
+
+    .back-div-container-6 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move6;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 15s;
+        position: absolute;
+        left: 55%;
+        bottom: 0%;
+        transform: scale(0.3);
+    }
+
+    .back-div-container-7 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move7;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 15s;
+        position: absolute;
+        left: 65%;
+        bottom: 0%;
+        transform: scale(0.3);
+    }
+
+    .back-div-container-8 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move8;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        left: 85%;
+        bottom: 0%;
+        transform: scale(0.3);
+    }
+
+    .back-div-squeare-1 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        border-radius: 10px;
+        border: 5px solid var(--color_3);
+        animation-name: turn_1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.3);
+    }
+
+    .back-div-squeare-2 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 10%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_2;
+        border: 5px solid var(--color_3);
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -7rem var(--color_2),
+            5rem 7rem var(--color_2),
+            5rem 5rem var(--color_4),
+            -5rem -5rem var(--color_2),
+            8rem -10rem var(--color_2),
+            -8rem 1010rem var(--color_2),
+            -10rem -10rem var(--color_4);
+            transform: scale(0.3);
+    }
+
+    .back-div-squeare-3 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 15%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_2);
+        animation-name: turn_3;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        box-shadow: -8rem -10rem var(--color_2),
+            7rem 7rem var(--color_4),
+            -9rem 9rem var(--color_2);
+            transform: scale(0.3);
+    }
+
+    .back-div-squeare-4 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_2);
+        animation-name: turn_3;
+        animation-duration: 5s;
+        animation-delay: 6s;
+        animation-iteration-count: infinite;
+        box-shadow: -8rem -10rem var(--color_1),
+            -8.1rem -10.1rem 0.05rem 0.05rem var(--color_dark1),
+            7rem 7rem var(--color_4),
+            -9rem 9rem var(--color_2);
+            transform: scale(0.3);
+    }
+
+    .back-div-squeare-5 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 35%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.3);
+    }
+
+    .back-div-squeare-6 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 55%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1),
+            -12rem -12rem var(--color_1);
+            transform: scale(0.3);
+    }
+
+    .back-div-squeare-7 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 70%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_2);
+        animation-name: turn_1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        box-shadow: -8rem -10rem var(--color_2),
+            8rem 10rem var(--color_2),
+            7rem 7rem var(--color_4),
+            -7rem -7rem var(--color_4),
+            -18rem -18rem var(--color_2),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -12rem -12rem var(--color_1);
+            transform: scale(0.3);
+    }
+
+    .back-div-squeare-8 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 60%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_3);
+        animation-name: turn_3;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.3);
+    }
+
+    .back-div-squeare-9 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        right: 30%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.3);
+    }
+
+    .back-div-squeare-10 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 5%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_3;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.3);
+    }
+
+
+    .back-div-squeare-11 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 5%;
+        bottom: 45%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.3);
+    }
+
+    .back-div-squeare-12 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        right: 30%;
+        bottom: 45%;
+        border-radius: 10px;
+        animation-name: turn_3;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.3);
+    }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 501px) {
+
+
+    .back-ground-movil {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        top: 0%;
+        transform: scale(0.8);
+    }
+    
+    .back-ground-movil.dark {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        top: 0%;
+        transform: scale(0.8);
+    }
+
+    .back-div-container-1 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        left: 10%;
+        bottom: 50%;
+        transform: scale(0.5);
+    }
+
+    .back-div-container-2 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move2;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-delay: 5s;
+        position: absolute;
+        left: 15%;
+        bottom: 5%;        
+        transform: scale(0.5);
+    }
+
+    .back-div-container-3 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move3;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 10s;
+        position: absolute;
+        left: 20%;
+        bottom: 10%;
+        transform: scale(0.5);    
+    }
+
+    .back-div-container-4 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move4;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        transform: scale(0.5);
+    }
+
+    .back-div-container-5 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move5;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 8s;
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        transform: scale(0.5);
+    }
+
+    .back-div-container-6 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move6;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 15s;
+        position: absolute;
+        left: 55%;
+        bottom: 0%;
+        transform: scale(0.5);
+    }
+
+    .back-div-container-7 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move7;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 15s;
+        position: absolute;
+        left: 65%;
+        bottom: 0%;
+        transform: scale(0.5);
+    }
+
+    .back-div-container-8 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move8;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        left: 85%;
+        bottom: 0%;
+        transform: scale(0.5);
+    }
+
+    .back-div-squeare-1 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        border-radius: 10px;
+        border: 5px solid var(--color_3);
+        animation-name: turn_1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-2 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 10%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_2;
+        border: 5px solid var(--color_3);
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -7rem var(--color_2),
+            5rem 7rem var(--color_2),
+            5rem 5rem var(--color_4),
+            -5rem -5rem var(--color_2),
+            8rem -10rem var(--color_2),
+            -8rem 1010rem var(--color_2),
+            -10rem -10rem var(--color_4);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-3 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 15%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_2);
+        animation-name: turn_3;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        box-shadow: -8rem -10rem var(--color_2),
+            7rem 7rem var(--color_4),
+            -9rem 9rem var(--color_2);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-4 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_2);
+        animation-name: turn_3;
+        animation-duration: 5s;
+        animation-delay: 6s;
+        animation-iteration-count: infinite;
+        box-shadow: -8rem -10rem var(--color_1),
+            -8.1rem -10.1rem 0.05rem 0.05rem var(--color_dark1),
+            7rem 7rem var(--color_4),
+            -9rem 9rem var(--color_2);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-5 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 35%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-6 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 55%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1),
+            -12rem -12rem var(--color_1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-7 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 70%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_2);
+        animation-name: turn_1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        box-shadow: -8rem -10rem var(--color_2),
+            8rem 10rem var(--color_2),
+            7rem 7rem var(--color_4),
+            -7rem -7rem var(--color_4),
+            -18rem -18rem var(--color_2),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -12rem -12rem var(--color_1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-8 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 60%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_3);
+        animation-name: turn_3;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-9 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        right: 30%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-10 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 5%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_3;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+
+    .back-div-squeare-11 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 5%;
+        bottom: 45%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-12 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        right: 30%;
+        bottom: 45%;
+        border-radius: 10px;
+        animation-name: turn_3;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+}
+
+@media only screen and (min-width: 502px) and (max-width: 800px) {
+
+
+    .back-ground-movil {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        top: 0%;
+        transform: scale(0.8);
+    }
+    
+    .back-ground-movil.dark {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        top: 0%;
+        transform: scale(0.8);
+    }
+
+    .back-div-container-1 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        left: 10%;
+        bottom: 50%;
+        transform: scale(0.5);
+    }
+
+    .back-div-container-2 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move2;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        animation-delay: 5s;
+        position: absolute;
+        left: 15%;
+        bottom: 5%;        
+        transform: scale(0.5);
+    }
+
+    .back-div-container-3 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move3;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 10s;
+        position: absolute;
+        left: 20%;
+        bottom: 10%;
+        transform: scale(0.5);    
+    }
+
+    .back-div-container-4 {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move4;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        transform: scale(0.5);
+    }
+
+    .back-div-container-5 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move5;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 8s;
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        transform: scale(0.5);
+    }
+
+    .back-div-container-6 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move6;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 15s;
+        position: absolute;
+        left: 55%;
+        bottom: 0%;
+        transform: scale(0.5);
+    }
+
+    .back-div-container-7 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move7;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 15s;
+        position: absolute;
+        left: 65%;
+        bottom: 0%;
+        transform: scale(0.5);
+    }
+
+    .back-div-container-8 {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: move8;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        left: 85%;
+        bottom: 0%;
+        transform: scale(0.5);
+    }
+
+    .back-div-squeare-1 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        border-radius: 10px;
+        border: 5px solid var(--color_3);
+        animation-name: turn_1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-2 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 10%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_2;
+        border: 5px solid var(--color_3);
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -7rem var(--color_2),
+            5rem 7rem var(--color_2),
+            5rem 5rem var(--color_4),
+            -5rem -5rem var(--color_2),
+            8rem -10rem var(--color_2),
+            -8rem 1010rem var(--color_2),
+            -10rem -10rem var(--color_4);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-3 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 15%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_2);
+        animation-name: turn_3;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        box-shadow: -8rem -10rem var(--color_2),
+            7rem 7rem var(--color_4),
+            -9rem 9rem var(--color_2);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-4 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_2);
+        animation-name: turn_3;
+        animation-duration: 5s;
+        animation-delay: 6s;
+        animation-iteration-count: infinite;
+        box-shadow: -8rem -10rem var(--color_1),
+            -8.1rem -10.1rem 0.05rem 0.05rem var(--color_dark1),
+            7rem 7rem var(--color_4),
+            -9rem 9rem var(--color_2);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-5 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 35%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-6 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 55%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1),
+            -12rem -12rem var(--color_1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-7 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 70%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_2);
+        animation-name: turn_1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        box-shadow: -8rem -10rem var(--color_2),
+            8rem 10rem var(--color_2),
+            7rem 7rem var(--color_4),
+            -7rem -7rem var(--color_4),
+            -18rem -18rem var(--color_2),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -12rem -12rem var(--color_1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-8 {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 60%;
+        bottom: 0%;
+        border-radius: 10px;
+        border: 5px solid var(--color_3);
+        animation-name: turn_3;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-9 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        right: 30%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-10 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 5%;
+        bottom: 0%;
+        border-radius: 10px;
+        animation-name: turn_3;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+
+    .back-div-squeare-11 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 5%;
+        bottom: 45%;
+        border-radius: 10px;
+        animation-name: turn_1;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+
+    .back-div-squeare-12 {
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        right: 30%;
+        bottom: 45%;
+        border-radius: 10px;
+        animation-name: turn_3;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        box-shadow: -5rem -5rem var(--color_4),
+            5rem 5rem var(--color_2),
+            -5rem 10rem var(--color_4),
+            12rem 12rem var(--color_1),
+            12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+            -2rem -14rem var(--color_1),
+            -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+            transform: scale(0.5);
+    }
+}
+
+.back-div-container-1 {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: move1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 10%;
+    bottom: 50%;
+}
+
+.back-div-container-2 {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: move2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    position: absolute;
+    left: 15%;
+    bottom: 5%;
+}
+
+.back-div-container-3 {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: move3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+}
+
+.back-div-container-4 {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: move4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    position: absolute;
+    left: 25%;
+    bottom: 0%;
+}
+
+.back-div-container-5 {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: move5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    position: absolute;
+    left: 25%;
+    bottom: 0%;
+}
+
+.back-div-container-6 {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: move6;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 15s;
+    position: absolute;
+    left: 55%;
+    bottom: 0%;
+}
+
+.back-div-container-7 {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: move7;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 15s;
+    position: absolute;
+    left: 65%;
+    bottom: 0%;
+}
+
+.back-div-container-8 {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: move8;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 85%;
+    bottom: 0%;
+}
+
+.back-div-squeare-1 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    border-radius: 10px;
+    border: 5px solid var(--color_3);
+    animation-name: turn_1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    box-shadow: -5rem -5rem var(--color_4),
+        5rem 5rem var(--color_2),
+        -5rem 10rem var(--color_4),
+        12rem 12rem var(--color_1),
+        12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+        -2rem -14rem var(--color_1),
+        -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+}
+
+.back-div-squeare-2 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+    border-radius: 10px;
+    animation-name: turn_2;
+    border: 5px solid var(--color_3);
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    box-shadow: -5rem -7rem var(--color_2),
+        5rem 7rem var(--color_2),
+        5rem 5rem var(--color_4),
+        -5rem -5rem var(--color_2),
+        8rem -10rem var(--color_2),
+        -8rem 1010rem var(--color_2),
+        -10rem -10rem var(--color_4);
+}
+
+.back-div-squeare-3 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 15%;
+    bottom: 0%;
+    border-radius: 10px;
+    border: 5px solid var(--color_2);
+    animation-name: turn_3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    box-shadow: -8rem -10rem var(--color_2),
+        7rem 7rem var(--color_4),
+        -9rem 9rem var(--color_2);
+}
+
+.back-div-squeare-4 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 25%;
+    bottom: 0%;
+    border-radius: 10px;
+    border: 5px solid var(--color_2);
+    animation-name: turn_3;
+    animation-duration: 5s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+    box-shadow: -8rem -10rem var(--color_1),
+        -8.1rem -10.1rem 0.05rem 0.05rem var(--color_dark1),
+        7rem 7rem var(--color_4),
+        -9rem 9rem var(--color_2);
+}
+
+.back-div-squeare-5 {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 35%;
+    bottom: 0%;
+    border-radius: 10px;
+    animation-name: turn_1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    box-shadow: -5rem -5rem var(--color_4),
+        5rem 5rem var(--color_2),
+        -5rem 10rem var(--color_4),
+        12rem 12rem var(--color_1),
+        12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+        -2rem -14rem var(--color_1),
+        -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+}
+
+.back-div-squeare-6 {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 55%;
+    bottom: 0%;
+    border-radius: 10px;
+    animation-name: turn_1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    box-shadow: -5rem -5rem var(--color_4),
+        5rem 5rem var(--color_2),
+        -5rem 10rem var(--color_4),
+        12rem 12rem var(--color_1),
+        12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+        -2rem -14rem var(--color_1),
+        -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1),
+        -12rem -12rem var(--color_1);
+}
+
+.back-div-squeare-7 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 70%;
+    bottom: 0%;
+    border-radius: 10px;
+    border: 5px solid var(--color_2);
+    animation-name: turn_1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    box-shadow: -8rem -10rem var(--color_2),
+        8rem 10rem var(--color_2),
+        7rem 7rem var(--color_4),
+        -7rem -7rem var(--color_4),
+        -18rem -18rem var(--color_2),
+        12rem 12rem var(--color_1),
+        12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+        -12rem -12rem var(--color_1);
+}
+
+.back-div-squeare-8 {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 85%;
+    bottom: 0%;
+    border-radius: 10px;
+    border: 5px solid var(--color_3);
+    animation-name: turn_3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    box-shadow: -5rem -5rem var(--color_4),
+        5rem 5rem var(--color_2),
+        -5rem 10rem var(--color_4),
+        12rem 12rem var(--color_1),
+        12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+        -2rem -14rem var(--color_1),
+        -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+}
+
+.back-div-squeare-9 {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+    border-radius: 10px;
+    animation-name: turn_1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    box-shadow: -5rem -5rem var(--color_4),
+        5rem 5rem var(--color_2),
+        -5rem 10rem var(--color_4),
+        12rem 12rem var(--color_1),
+        12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+        -2rem -14rem var(--color_1),
+        -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+}
+
+.back-div-squeare-10 {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 5%;
+    bottom: 0%;
+    border-radius: 10px;
+    animation-name: turn_3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    box-shadow: -5rem -5rem var(--color_4),
+        5rem 5rem var(--color_2),
+        -5rem 10rem var(--color_4),
+        12rem 12rem var(--color_1),
+        12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+        -2rem -14rem var(--color_1),
+        -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+}
+
+
+.back-div-squeare-11 {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 5%;
+    bottom: 45%;
+    border-radius: 10px;
+    animation-name: turn_1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    box-shadow: -5rem -5rem var(--color_4),
+        5rem 5rem var(--color_2),
+        -5rem 10rem var(--color_4),
+        12rem 12rem var(--color_1),
+        12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+        -2rem -14rem var(--color_1),
+        -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+}
+
+.back-div-squeare-12 {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 5%;
+    bottom: 45%;
+    border-radius: 10px;
+    animation-name: turn_3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    box-shadow: -5rem -5rem var(--color_4),
+        5rem 5rem var(--color_2),
+        -5rem 10rem var(--color_4),
+        12rem 12rem var(--color_1),
+        12.1rem 12.1rem 0.09rem 0.09rem var(--color_dark1),
+        -2rem -14rem var(--color_1),
+        -2.1rem -14.1rem 0.09rem 0.09rem var(--color_dark1);
+}

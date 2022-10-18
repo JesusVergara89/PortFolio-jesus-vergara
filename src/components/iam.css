@@ -1,0 +1,203 @@
+:root {
+  --color_1: rgb(245, 240, 227);
+  --color_2: rgb(64, 191, 193);
+  --color_3: rgb(255, 111, 94);
+  --color_4: rgb(240, 19, 77);
+  --color_5: rgb(0, 12, 12);
+  --color_white: #ffffff;
+  /*Dark palette*/
+  --color_dark1: #0D1B2A;
+  --color_dark2: #270082;
+  --color_dark3: #7A0BC0;
+  --color_dark4: #FA58B6;
+  --color_dark5: #E0E1DD;
+}
+
+@keyframes cssAnimation {
+
+  0% {
+    background-color: var(--color_white);
+  }
+
+  100% {
+    background-color: var(--color_2);
+  }
+
+}
+
+@keyframes paragraph_1 {
+
+  0% {
+    color: var(--color_2);
+  }
+
+  100% {
+    color: var(--color_white);
+  }
+
+}
+
+.Iam {
+  width: 80%;
+  height: auto;
+  background-color: var(--color_3);
+  border-radius: 20px;
+  border: 1px solid var(--color_dark1);
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  box-shadow: 5px 5px 5px 2px black;
+}
+
+.Iam.dark {
+  width: 80%;
+  height: auto;
+  background-color: var(--color_dark2);
+  border-radius: 20px;
+  border: 1px solid var(--color_white);
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  box-shadow: 5px 5px 5px 2px var(--color_white);
+}
+
+.iam-h1 {
+  font-size: 29px;
+  font-weight: bold;
+  color: var(--color_white);
+}
+
+.iam-h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--color_1);
+  animation-name: paragraph_1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.iam-div-paragraph {
+  width: 100%;
+  height: auto;
+}
+
+.iam-paragraph-1 {
+  color: var(--color_white);
+  text-align: start;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.iam-paragraph-2 {
+  color: var(--color_5);
+  text-align: start;
+  font-size: 17px;
+  font-weight: 520;
+}
+
+.iam-paragraph-2.dark {
+  color: var(--color_dark5);
+  text-align: start;
+  font-size: 17px;
+  font-weight: 520;
+}
+
+.iam_react,
+.iam_html,
+.iam_js,
+.iam_redux {
+  color: var(--color_1);
+  font-weight: bold;
+}
+
+.iam_css {
+  color: var(--color_4);
+  font-weight: bold;
+  background-color: var(--color_white);
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 3px;
+  animation-name: cssAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .Iam {
+    width: 250px;
+    height: auto;
+    background-color: var(--color_3);
+    border-radius: 20px;
+    border: 1px solid var(--color_dark1);
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 5px 2px black;
+  }
+
+  .Iam.dark {
+    width: 250px;
+    height: auto;
+    background-color: var(--color_dark2);
+    border-radius: 20px;
+    border: 1px solid var(--color_white);
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 5px 2px var(--color_white);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .Iam {
+    width: 400px;
+    height: auto;
+    background-color: var(--color_3);
+    border-radius: 20px;
+    border: 1px solid var(--color_dark1);
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 5px 2px black;
+    transform: scale(0.9);
+  }
+
+  .Iam.dark {
+    width: 400px;
+    height: auto;
+    background-color: var(--color_dark2);
+    border-radius: 20px;
+    border: 1px solid var(--color_white);
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 5px 2px var(--color_white);
+    transform: scale(0.9);
+  }
+}
