@@ -9,7 +9,7 @@ const Music = ({darkModeBtn}) => {
     return (
         <article className={darkModeBtn ? "my-music dark" : "my-music"}>
 
-            <h2 className={darkModeBtn ? 'my-music-h2 dark' : 'my-music-h2'}>Find out what i hear...</h2>
+            <h2 className={darkModeBtn ? 'my-music-h2 dark' : 'my-music-h2'}>Find out what I hear...</h2>
 
             <div className='my-music-div'>
                 <img src={jesusMusic} alt="mymusic" />
