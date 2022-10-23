@@ -6,7 +6,7 @@ const Expe2 = ({darkModeBtn}) => {
     return (
         <article className="expe-2">
             <img className="expe-2-img" src={sykes} alt="sykes" />
-            <h3 className={darkModeBtn ? 'expe-2-h3 dark' : 'expe-2-h3'}>Bilingual agent</h3>
+            <h3 className={darkModeBtn ? 'expe-2-h3 dark' : 'expe-2-h3'}>Call center agent</h3>
         </article>
     )
 }
